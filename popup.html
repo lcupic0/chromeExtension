@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Dancing+Script&family=Fira+Sans:wght@200;300;400;500;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Jost:wght@200;300;400&family=Lora:ital,wght@1,400;1,500;1,600&family=Montserrat:wght@100;300;500&family=News+Cycle&family=Open+Sans&family=Phudu:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Varela&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainwrapper">
+        <div class="wrapper">
+            <h1>WebShop | Kalkulator</h1>
+            <button class="button" id="helpbutton">POMOĆ</button>
+            <div class="help | displaynone">
+                <p>Koristite jednu od ponuđenih opcija:</p>
+                <p>1) Vam daje opciju izračuna optimalne cijene s optimalnom maržom</p>
+                <p>2) Vam omogućava odabir proizvoljne marže i cijene</p>
+            </div>
+            <div class="section">
+                <h2><b>1)</b> Odabir dobavljača:</h2>
+                <form class="forma1">
+
+                    <div>
+                        <input type="radio" name="dobavljac" id="x1" class="tockica" value="120">
+                        <label for="x1">X1 (120%)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dobavljac" id="x2" class="tockica" value="85">
+                        <label for="x2">X2 (85%)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dobavljac" id="x3" class="tockica" value="75">
+                        <label for="x3">X3 (75%)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dobavljac" id="x4" class="tockica" value="20">
+                        <label for="x4">X4 (20%)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dobavljac" id="kotac" class="tockica" value="85">
+                        <label for="x5">X5 (85%)</label>
+                    </div>
+
+                    <div class="inputdiv">
+                        <label for="cijena1" class="label">Unesite cijenu: </label>
+                        <input type="number" name="cijena" id="cijena1">
+                    </div>
+
+                </form> 
+                <button class="submitbutton | submitbutton1">Izračunaj</button>
+                <p><b>Izračunata cijena sa <span id="marza1"></span> marže: </b><span class="rezultatcijena1 | cijena">0</span> €</p>
+            </div>
+            <div class="section | section2">
+                <h2><b>2)</b> Proizvoljna marža:</h2>
+                <form class="forma2">
+                    <div class="inputdiv">
+                        <label for="cijena2" class="label">Unesite cijenu: </label>
+                        <input type="number" name="cijena" id="cijena2">
+                    </div>
+                    <div class="inputdiv">
+                        <label for="marza" class="label">Unesite maržu: </label>
+                        <input type="number" name="marza" id="marza">
+                    </div>
+                </form>
+                <button class="submitbutton | submitbutton2">Izračunaj</button>
+                <p><b>Izračunata cijena sa <span id="marza2"></span> marže: </b><span class="rezultatcijena2 | cijena">0</span> €</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
